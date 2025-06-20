@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fav Destinations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #0077b6;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      flex: 1;
+    }
+
+    .nav-center {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .search-input {
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .img1 {
+      background-color: white;
+      padding: 20px;
+      width: 45%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    .dest-places {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #0077b6;
+    }
+
+    h3 {
+      color: #023e8a;
+    }
+
+    .text {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-left, .nav-center, .nav-right {
+        justify-content: center;
+        flex: 100%;
+        margin: 5px 0;
+      }
+
+      .img1 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="logo.jpg" alt="logo" class="img" />
+    </div>
+    <div class="nav-center">
+      <input type="text" class="search-input" placeholder="Search places...">
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Destination Cards -->
+  <div class="images">
+    <!-- Manali -->
+    <div class="img1">
+      <img src="manali.jpg" alt="Manali" class="dest-places" />
+      <h2>MANALI</h2>
+      <h3>🏔️ Manali – The Adventure Capital of Himachal</h3>
+      <p class="text">
+        Manali, nestled in the picturesque Beas River Valley of Himachal Pradesh, is a haven for travelers seeking both adventure and tranquility. Surrounded by majestic snow-capped mountains, pine forests, and apple orchards, it offers a refreshing escape from the chaos of city life.
+        <br><br>
+        This charming hill station is a hub for adventure sports like paragliding, zorbing, skiing, and white-water rafting. The famous <strong>Solang Valley</strong> turns into a snow paradise in winter, attracting ski enthusiasts from all over India. For those craving snow even in summer, a drive to <strong>Rohtang Pass</strong> offers stunning landscapes and snow activities.
+        <br><br>
+        Culturally, Manali is steeped in legends and spiritual energy. The <strong>Hadimba Devi Temple</strong>, built in 1553, is surrounded by cedar forests and exudes mystical vibes. The <strong>Vashisht Hot Springs</strong> offer naturally heated sulphur waters believed to have healing properties.
+        <br><br>
+        Whether you want to sip chai in a cozy café in <strong>Old Manali</strong>, explore hidden waterfalls, or trek to remote Himalayan villages, Manali has something for every kind of traveler. It’s not just a destination — it’s an experience that rejuvenates your soul.
+      </p>
+    </div>
+
+    <!-- Shimla -->
+    <div class="img1">
+      <img src="shimla.jpg" alt="Shimla" class="dest-places" />
+      <h2>SHIMLA</h2>
+      <h3>🌲 Shimla – The Queen of Hills</h3>
+      <p class="text">
+        Shimla, the erstwhile summer capital of British India, is one of India’s most iconic hill stations. Nestled among the lush hills of Himachal Pradesh, it boasts colonial architecture, scenic mountain views, and a climate that’s pleasant year-round.
+        <br><br>
+        The heart of Shimla lies along <strong>Mall Road</strong>, lined with quaint shops, bakeries, and colonial buildings. The <strong>Ridge</strong> offers panoramic views of the surrounding mountains and is home to the historic <strong>Christ Church</strong>, one of the oldest churches in North India. For a bit of thrill, you can hike or take a ropeway to <strong>Jakhoo Hill</strong>, the highest point in Shimla, which hosts a massive statue of Lord Hanuman and stunning views.
+        <br><br>
+        Another must-do is a ride on the <strong>Kalka–Shimla Toy Train</strong>, a UNESCO World Heritage site. The journey takes you through tunnels, pine forests, and mountain bridges — a nostalgic and scenic experience.
+        <br><br>
+        In winter, Shimla turns into a snow-clad town perfect for ice-skating and snowball fights. Its British charm mixed with natural beauty makes it an ideal destination for families, honeymooners, and history lovers alike.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
